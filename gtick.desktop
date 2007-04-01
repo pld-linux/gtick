@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gtick Metronome
+Name[pl]=Metronom - gtick
+Comment=
+Icon=gtick.xpm
+Exec=gtick
+Terminal=false
+Type=Application
+Categories=GTK;Audio;
+StartupNotify=true
