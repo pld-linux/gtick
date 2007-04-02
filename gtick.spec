@@ -6,10 +6,10 @@ Version:	0.3.13
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-URL:		http://www.antcom.de/gtick/
 Source0:	http://www.antcom.de/gtick/download/%{name}-%{version}.tar.gz
 # Source0-md5:	13365ce8f605657370518dd62df8994b
 Source1:	%{name}.desktop
+URL:		http://www.antcom.de/gtick/
 BuildRequires:	gtk+2-devel
 %{?with_sndfile:BuildRequires:  libsndfile-devel}
 BuildRequires:	pkgconfig
