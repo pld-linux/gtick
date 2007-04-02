@@ -42,8 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_desktopdir} \
-	$RPM_BUILD_ROOT%{_pixmapsdir}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install src/icon64x64.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.xpm
@@ -55,10 +54,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
+%doc README TODO ChangeLog NEWS THANKS AUTHORS doc/NOTES
 %attr(755,root,root) %{_bindir}/%{name}
-%{_mandir}/man1/%{name}.1.*
+%{_mandir}/man1/%{name}.1*
 %{_desktopdir}/%{name}.desktop
 %{_pixmapsdir}/%{name}.xpm
-%doc README TODO ChangeLog
-%doc doc/NOTES
-%doc NEWS THANKS INSTALL AUTHORS ABOUT-NLS
