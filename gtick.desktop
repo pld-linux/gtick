@@ -7,5 +7,5 @@ Icon=gtick.xpm
 Exec=gtick
 Terminal=false
 Type=Application
-Categories=GNOME;GTK;Audio;
+Categories=GTK;Audio;
 StartupNotify=true
