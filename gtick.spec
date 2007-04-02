@@ -1,4 +1,7 @@
-%bcond_without  sndfile
+#
+# Conditional build:
+%bcond_without  sndfile		# build without sndfile
+#
 Summary:	Metronome application for GNU/Linux
 Summary(pl.UTF-8):	Metronom dla Linuksa
 Name:		gtick
@@ -22,8 +25,8 @@ utilizes GTK+ and OSS (ALSA compatible).
 
 %description -l pl.UTF-8
 Metronom muzyczny z estetycznym i wygodnym interfejsem GTK+.
-Kompatybilny z OSS i ALSA. Jest Åatwy w obsÅudze oraz posiada
-moÅ¼liwoÅÄ regulacji parametrÃ³w w szerokich zakresach.
+Kompatybilny z OSS i ALSA. Jest łatwy w obsłudze oraz posiada
+możliwość regulacji parametrów w szerokich zakresach.
 
 %prep
 %setup -q
