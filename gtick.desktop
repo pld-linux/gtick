@@ -1,9 +1,8 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Gtick Metronome
 Name[pl]=Metronom - gtick
 Comment=
-Icon=gtick.xpm
+Icon=gtick
 Exec=gtick
 Terminal=false
 Type=Application
